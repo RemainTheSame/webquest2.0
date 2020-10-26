@@ -10,10 +10,29 @@
 .header a{
   text-decoration: none;
   color: deeppink;
+  border-bottom: 1px solid transparent;
+}
+
+.header a:hover{
+  border-bottom: #282c34 solid 1px ;
+  border-radius: 7%;
+}
+
+.header a:focus{
+  border-bottom: #282c34 solid 1px ;
+  border-radius: 7%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {

@@ -6,6 +6,8 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import {getRaceDescription, getProfDescription} from "../tempData";
+
 
 class CharacterCreation extends Component {
     constructor(){
@@ -104,6 +106,9 @@ class CharacterCreation extends Component {
                     <Route path={"/creation/race"}>
                         <div>
                         <h2>Select Race:</h2>
+                            <p className={"race-description"}>
+                                {getRaceDescription(this.state.race)}
+                            </p>
                         <input id={"human"} type={"checkbox"} className={""} name={"race"}
                                checked={this.state.race === "human"} onChange={this.handleRaceChange} value={"human"}/>
                         <label htmlFor="human" className={"top-label"}>Human<img className={"race-image"} src={""}
@@ -155,6 +160,7 @@ class CharacterCreation extends Component {
                     </Route>
                     <Route path={"/creation/professions"}>
                         <h2>Select Your Profession:</h2>
+                        {getProfDescription(this.state.prof)}
                         <div className={"stats-div"}>
                             <div className={"column"}>
                                 <h3>Rogue Types</h3>
