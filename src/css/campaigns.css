@@ -58,10 +58,9 @@
     position: absolute;
     top: 20%;
     background-color: #282c34;
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
     z-index: 2;
     border-radius: 10%;
     animation: show ease-in-out 0.3s;
-
 }

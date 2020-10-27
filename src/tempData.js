@@ -15,12 +15,11 @@ const druidDesc = "Druids.."
 const hunterDesc = "Hunters.."
 
 const campaigns = [
-    {"name": "Prologue - Breaking Free", "description": "asdasd"},
-    {"name": "Chapter 1", "description": "asdasd"},
+    {"name": "WebQuest", "description": "Fantasy Adventure"},
+    {"name": "Förbundt", "description": "Post-Apocalyptic Europe"},
     {"name": "Chapter 2", "description": "dsadasd"},
     {"name": "Chapter 3", "description": "dddsasd"},
     {"name": "Chapter 4", "description": "aaasdasd"},
-
 ]
 
 export function getCampaigns() {
