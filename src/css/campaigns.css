@@ -28,3 +28,40 @@
     width: 70%;
     height: 30%;
 }
+
+.campaign-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    opacity: 80%;
+    transition: 0.5s;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: show ease-in-out 0.3s;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 80%;
+    }
+}
+
+.campaign-modal-content{
+    position: absolute;
+    top: 20%;
+    background-color: #282c34;
+    width: 400px;
+    height: 500px;
+    z-index: 2;
+    border-radius: 10%;
+    animation: show ease-in-out 0.3s;
+
+}
