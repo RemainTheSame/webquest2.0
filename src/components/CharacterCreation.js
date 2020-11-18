@@ -140,6 +140,7 @@ class CharacterCreation extends Component {
                         <div className={"stats-div"}>
                             <div>
                                 <h3>STR</h3>
+                                <p></p>
                                 <label className={"stats-label"} id={"str"}><button  onClick={this.incrementStat}>+</button><div className={"stat-space"}>{this.state.stats.str}</div><button onClick={this.decrementStat}>-</button></label>
                                 <h3>END</h3>
                                 <label className={"stats-label"} id={"end"}><button  onClick={this.incrementStat}>+</button><div className={"stat-space"}>{this.state.stats.end}</div><button onClick={this.decrementStat}>-</button></label>
